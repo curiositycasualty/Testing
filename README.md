@@ -49,3 +49,14 @@ I make my way home and saw my loved ones
 
 What is this I don't even
 
+```
+█▒░ 0 virtsol02:/#declare -f hr
+hr ()
+{
+    for ((i=0; i<$(echo $(stty size 2>/dev/null | awk '{print $2}' && tput cols)); i++))
+    do
+        echo -ne "█";
+    done
+}
+```
+
